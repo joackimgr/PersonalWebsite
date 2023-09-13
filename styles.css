@@ -1,0 +1,199 @@
+
+body{
+    background-color: #FAF1E4;
+}
+
+/* Profile */
+
+.profile{
+    background-color: #CEDEBD;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 400px;
+    box-shadow: 10px 5px 30px 0px ;
+}
+
+.prof_img img{
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.text{
+    text-align: left;
+    font-size: 25px;
+    color: #435334;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 28px;
+}
+
+/* Education */
+
+.education{
+    font-family: 'Montserrat', sans-serif;
+    color: #435334;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    text-align: left;
+    margin-top: 20px
+}
+
+.education > .title h2{
+    border-bottom: 2px dashed #435334;
+    padding-bottom: 3px;
+}
+
+.education > .university a{
+    color: #435334;
+    text-decoration: none;
+}
+
+.instructor{
+    font-size: 18px;
+}
+
+.university, .course{
+    width: 600px;
+}
+
+/* Projects */
+
+.projects{
+    font-family: 'Montserrat', sans-serif;
+    color: #435334;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.projects > .title h2{
+    border-bottom: 2px dashed #435334;
+    padding-bottom: 3px;
+}
+
+.projects > .benaki{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 30px
+}
+
+.projects > .benaki > .benaki_img {
+   grid-row: span 2;
+}
+
+.projects > .benaki > .benaki_img img{
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.projects > .benaki > .benaki_text, .benaki_level {
+    max-width: 200px;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 18px 
+}  
+
+/* Contact */
+
+.contact{
+    font-family: 'Montserrat', sans-serif;
+    color: #435334;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact > .title h2{
+    border-bottom: 2px dashed #435334;
+    padding-bottom: 3px;
+}
+
+.contact > .icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.contact > .icons a{
+    color: #435334;
+}
+
+/* Footer */
+
+footer{
+    background-color: #CEDEBD;
+    margin-top: 30px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #435334;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Media Queries */
+@media (max-width: 820px){
+    
+    /* Profile */
+    .profile > .prof_img img{
+        width: 150px;
+        height: 150px;
+        margin-left: 15px;
+    }
+
+    .profile > .text{
+        font-size: 15px;
+        margin-right: 15px;
+    }
+
+    .profile{
+        height: 300px;
+    }
+    
+    /* Education */
+    .education {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .education > .university, .course {
+        font-size: 15px;
+        width: 350px;
+    }
+
+    /* Projects */
+    .projects > .benaki{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects > .benaki > .benaki_text, .benaki_level {
+        text-align: center; 
+        max-width: 300px;
+        margin-left: 0;
+    }
+
+    /* Contact */
+    .contact > .text{
+        font-size: 1.3rem;
+    }
+
+    .contact > .icons{
+        gap: 15px;
+    }
+
+    /* Footer */
+    .footer address{
+        font-size: 1px;
+    }
+}
